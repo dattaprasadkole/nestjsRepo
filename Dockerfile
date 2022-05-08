@@ -5,5 +5,5 @@ RUN npm install
 COPY . .
 RUN npm run build
 #RUN ls -lht ./
-EXPOSE 3000
+EXPOSE 4000
 CMD ["npm", "run", "start:prod"]
