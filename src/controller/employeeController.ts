@@ -9,6 +9,7 @@ export class EmployeeController {
 
   @Get()
   getAllEmployees() {
+    console.log("Returing the employee details");
     return this.employeeService.findAll();
   }
 
@@ -20,6 +21,7 @@ export class EmployeeController {
 
   @Post()
   async create(@Body() employeeDto : EmployeeRequestDto) {
+    console.log("Adding the employee details");
     return this.employeeService.create(employeeDto);
   }
 }
